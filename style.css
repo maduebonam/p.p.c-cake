@@ -1,0 +1,834 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(ceo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: rgb(13, 20, 49);
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav li:first-child {
+    margin-right: auto;
+    font-size: 35px;
+    padding: 10px 20px 50px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+nav i {
+    color: #fff;
+    font-size: 28px;
+    margin-top: 50px;
+}
+
+nav img {
+    width: 100px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 1000;
+    background-color: rgb(13, 20, 49);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menu-button {
+    display: none;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.home {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background-image: url(images/cake\ 4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .content {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.home .content .waves {
+    position: absolute;
+    width: 400%;
+    top: 45%;
+}
+
+.home .content .heading {
+
+    max-width: 460px;
+    width: 100%;
+    z-index: 100;
+}
+
+.home .content .heading h2 {
+    font-size: 2rem;
+    color: rgb(240, 8, 43);
+    z-index: 1000;
+}
+
+
+.home .content .heading h3 {
+    color: #000;
+    font-size: 1.6rem;
+    z-index: 1000;
+}
+
+.home .content .heading h1 {
+    color: rgb(20, 10, 170, 0.764);
+    line-height: 4rem;
+    font-size: 4.5rem;
+    padding-bottom: 10px;
+    z-index: 1000;
+}
+
+.home .content .heading p {
+    color: black;
+    font-size: 2rem;
+    z-index: 100;
+}
+
+
+
+.about h1 {
+    font-size: 40px;
+    padding: 1rem 0;
+    text-align: center;
+    color: #333;
+
+    span {
+        color: #e58f00;
+    }
+}
+
+.about .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem 1.2rem;
+    padding: 1.2rem;
+}
+
+.about .main-box .box {
+    flex: 1 1 18rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: #fff;
+    border: 0.5rem solid #fff;
+    cursor: pointer;
+
+}
+
+.about .main-box .box .image-about {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.about .main-box .box .content-about {
+    background: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.about .main-box .box .content-about img {
+    margin: 2rem 0;
+}
+
+.about .main-box .box .content-about h2 {
+    font-size: 1.2rem;
+    color: white;
+    background: red;
+    padding: 0.5rem;
+}
+
+.about .main-box .box .content-about p {
+    font-size: 1rem;
+    color: #111;
+    padding: 0.2rem;
+}
+
+.about h3 {
+
+    font-size: 1rem;
+    font-style: italic;
+    background: red;
+    text-align: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.gallery .heading {
+    font-size: 40px;
+    padding: 1rem 0;
+    text-align: center;
+    color: #333;
+
+    span {
+        color: #e58f00;
+    }
+}
+
+.gallery .main-gallery-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .main-gallery-box .box {
+    flex: 1 1 18rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 0.1rem solid #e58f00;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+
+.gallery .main-gallery-box .box .image-about {
+    width: 100%;
+    height: 22rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.gallery .main-gallery-box .box h3 {
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .main-gallery-box .box .icons {
+    position: absolute;
+    color: #e58f00;
+    display: flex;
+    flex-direction: column;
+    right: -20%;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.gallery .main-gallery-box .box:hover .icons {
+    right: 10%;
+    opacity: 0.9;
+}
+
+.gallery .main-gallery-box .box .icons i {
+    background: white;
+    margin: 1rem;
+    font-size: 2rem;
+    border: 1px solid red;
+    padding: 1rem;
+}
+
+.gallery .main-gallery-box .box .stars {
+    color: #e58f00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.Service {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+
+    .heading {
+        color: #a60977;
+        text-align: center;
+        font-size: 40px;
+        padding: 1rem;
+    }
+
+    .box-container {
+        display: flex;
+        gap: 1.3rem;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 6.5rem;
+
+        .box {
+            cursor: initial;
+            text-decoration: none;
+            flex: 1 1 18rem;
+            position: relative;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border: 0.1rem solid #e58f00;
+            cursor: pointer;
+            border-radius: 1rem;
+            padding: 1 rem 1rem;
+
+            &:hover .image img {
+                transform: scale(1.1);
+            }
+
+            .image {
+                overflow: hidden;
+                height: 20rem;
+
+                img {
+                    width: 80%;
+                    height: 100%;
+                }
+            }
+
+            .content {
+                display: flex;
+                background: #fff;
+                width: 100%;
+                justify-content: space-between;
+
+                .info {
+                    padding: 0.3rem 2rem;
+
+                    h3 {
+                        font-size: 1.1rem;
+                        color: #111;
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        font-size: 1rem;
+                        color: #111;
+                        line-height: 1rem;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                    }
+                }
+
+                i {
+                    font-size: 4.5rem;
+                    width: 5rem;
+                    background: #a60977;
+                    color: #fff;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 4.5rem;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+
+
+.Review {
+    background: #111;
+}
+
+.Review h1 {
+    font-size: 30px;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    background: red;
+
+    span {
+        color: #e58f00;
+    }
+}
+
+.Review .main-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.Review .main-box .box {
+    text-align: center;
+    padding: 1rem;
+    border: 0.3rem solid #fff;
+    box-shadow: 10px 10px 35px 0px rgba(243, 236, 236, 0.49);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(234, 224, 224, 0.49);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(237, 224, 224, 0.49);
+    border-radius: 1rem;
+    flex: 1 1 16rem;
+    background: #fff;
+    margin-top: 0.5rem;
+
+}
+
+.Review .main-box .box img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+    object-fit: cover;
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+
+.Review .main-box .box img {
+    transform: rotate(0deg);
+}
+
+.Review .main-box .box h2 {
+    font-size: 1.3rem;
+    padding: 0.3rem 0;
+    color: #111;
+}
+
+.Review .main-box .box .stars i {
+    font-size: 1rem;
+    color: #e58f00;
+    padding: 0.3rem 0;
+}
+
+.Review .main-box .box p {
+    font-size: 1rem;
+    padding: 0.3rem 0;
+    color: #111;
+}
+
+
+.Contact h1 {
+    font-size: 40px;
+    padding: 1.5rem 0;
+    text-align: center;
+    color: black;
+
+
+    span {
+        color: #e58f00;
+    }
+}
+
+
+.Contact .row {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    background: #11e4dd;
+    padding: 1.2rem;
+}
+
+.Contact .row h2 {
+    text-align: center;
+    color: #111;
+    padding: 2rem 0;
+}
+
+.Contact .row h4 {
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.contact .row ul {
+    list-style: none;
+}
+
+.contact .row ul li {
+    margin: 2rem 2rem;
+}
+
+.contact .row ul li i {
+    font-size: 2rem;
+    color: #111
+}
+
+.contact .row ul li strong {
+    margin-left: 1rem;
+    font-size: 1.6rem;
+}
+
+.contact .row ul li p {
+    font-size: 18px;
+    margin-left: 3rem;
+    color: #111;
+}
+
+
+
+
+
+.footer {
+    background-color: rgb(238, 239, 241);
+}
+
+.footer .main-footer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(238, 239, 241);
+    justify-content: center;
+}
+
+.footer .main-footer h1 {
+    color: #000;
+}
+
+.footer .main-footer .social {
+    display: inline-flex;
+    list-style: none;
+}
+
+.footer .main-footer .social .icon {
+    position: relative;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .main-footer .social .tooltip {
+    position: absolute;
+    top: 100px;
+    font-size: 18px;
+    background: #fff;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(243, 239, 239, 0.789);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .main-footer .social .tooltip ::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    left: 50%;
+    bottom: -3px;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.footer .main-footer .social .icon:hover .tooltip {
+    top: -36px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.footer .main-footer .social .icon:hover span,
+.footer .main-footer .social .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer .main-footer .social .facebook:hover,
+.footer .main-footer .social .facebook:hover .tooltip,
+.footer .main-footer .social .facebook:hover .tooltip::before {
+    background: #1877f2;
+    color: #fff;
+}
+
+
+.footer .main-footer .social .instagram:hover,
+.footer .main-footer .social .instagram:hover .tooltip,
+.footer .main-footer .social .instagram:hover .tooltip::before {
+    background: #a12548;
+    color: #fff;
+}
+
+.footer .main-footer .social .whatsapp:hover,
+.footer .main-footer .social .whatsapp:hover .tooltip,
+.footer .main-footer .social .whatsapp:hover .tooltip::before {
+    background: #069e34;
+    color: #fff;
+}
+
+.footer .main-footer .social.tiktok:hover,
+.footer .main-footer .social .tiktok:hover .tooltip,
+.footer .main-footer .social .tiktok:hover .tooltip::before {
+    background: #000;
+    color: #fff;
+}
+
+
+.footer .main-footer .credit {
+    width: 100%;
+    font-size: 0.8rem;
+    color: #0d0707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-style: italic;
+    margin: 1rem;
+    border-top: 0.1rem solid #0d0707;
+    letter-spacing: 0.2rem;
+}
+
+
+
+
+@media (max-width:1200px) {
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media(max-width: 798px) {
+
+
+    .sidebar {
+        position: absolute;
+        width: 30%;
+        right: 0;
+
+    }
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    .home {
+        align-items: center;
+        margin: 0px 40px;
+    }
+
+    .home .content .heading {
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        left: 0;
+    }
+
+    .home .content .heading h1 {
+        color: rgb(20, 10, 170, 0.764);
+        line-height: 2rem;
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+
+    .home .content .heading p {
+        color: black;
+        font-size: 2rem;
+        left: 0;
+        z-index: 100;
+    }
+
+    .main-box {
+        display: block;
+    }
+
+
+    .menu-button {
+        display: block;
+    }
+
+    .about .main-box {
+        display: block;
+        padding: 0.5rem;
+
+    }
+
+
+    .Service {
+        background: #fff;
+        padding: 2rem 0;
+        text-align: center;
+
+        .heading {
+            color: #101010;
+            text-align: center;
+            font-size: 20px;
+            padding: 1rem;
+        }
+
+        .box-container {
+            display: block;
+            text-align: center;
+            justify-content: center;
+            margin: 1.2rem;
+
+            .box {
+                cursor: initial;
+                text-decoration: none;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                border: 0.1rem solid #e58f00;
+                cursor: pointer;
+                border-radius: 1rem;
+                padding: 1 rem;
+
+                &:hover .image img {
+                    transform: scale(1.1);
+
+                    .image {
+                        width: 40%;
+                        height: 30%;
+                        margin: 1rem;
+
+                        img {
+                            width: 70%;
+                            height: 60%;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        background: #fff;
+                        width: 80%;
+                        justify-content: space-between;
+
+                        .info {
+                            padding: 0.3rem 0.5rem;
+
+                            h3 {
+                                font-size: 1.1rem;
+                                color: #111;
+                                text-transform: capitalize;
+                            }
+
+
+                        }
+
+                        i {
+                            font-size: 3.5rem;
+                            width: 4rem;
+                            background: #a60977;
+                            color: #fff;
+                            cursor: pointer;
+                            text-align: center;
+                            line-height: 3.5rem;
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+        .contact .row ul li i {
+            font-size: 1rem;
+            color: #111
+        }
+
+        .contact .row ul li strong {
+            margin: 0 1rem;
+            font-size: 0.5rem;
+        }
+
+        .contact .row ul li p {
+            font-size: 12px;
+            margin-left: 3rem;
+            color: #111;
+        }
+
+        .footer .main-footer .social .icon {
+            font-size: 15px;
+            margin: 6px;
+        }
+
+        .footer .main-footer .credit {
+            font-size: 10px;
+        }
+
+    }
+
+}
+
+
+
+@media(max-width: 400px) {
+    .sidebar {
+        width: 50%;
+        cursor: pointer;
+    }
+}
